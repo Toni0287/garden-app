@@ -1,6 +1,8 @@
-# Hardcoded values for the season and plant type
-season = "summer"  # TODO: Replace with input() to allow user interaction.
-plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
+# Ask the user for the season and plant type instead of hardcoding them.
+# .strip() removes accidental spaces and .lower() makes the comparisons
+# below case-insensitive, so "Summer" and " summer " both work.
+season = input("Enter the season (summer/winter): ").strip().lower()
+plant_type = input("Enter the plant type (flower/vegetable): ").strip().lower()
 
 # Variable to hold gardening advice
 advice = ""
